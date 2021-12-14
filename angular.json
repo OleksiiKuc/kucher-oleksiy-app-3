@@ -49,8 +49,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "5kb",
+                  "maximumError": "5kb"
                 }
               ],
               "fileReplacements": [
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ihor-yavorskyi-app:build:production"
+              "browserTarget": "kucher-oleksiy-app:build:production"
             },
             "development": {
-              "browserTarget": "ihor-yavorskyi-app:build:development"
+              "browserTarget": "kucher-oleksiy-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ihor-yavorskyi-app:build"
+            "browserTarget": "kucher-oleksiy-app:build"
           }
         },
         "test": {
@@ -112,5 +112,5 @@
       }
     }
   },
-  "defaultProject": "ihor-yavorskyi-app"
+  "defaultProject": "kucher-oleksiy-app"
 }
