@@ -1,0 +1,21 @@
+<ngx-spinner bdColor="rgba(200, 87, 90,0.50)" size="medium" color="#69f0ae" type="pacman" [fullScreen]="true">
+  <p style="color: white"> Loading... </p>
+</ngx-spinner>
+
+<mat-toolbar color="primary">
+  <span>kucher-oleksiy-app-3</span>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container main-page">
+  <mat-drawer mode="side" opened>
+    <mat-list>
+      <div *ngFor="let group of groups" class="list-item" (click)="filterDishes(group.dishes)">
+        <mat-list-item>{{group.category}}</mat-list-item>
+        <mat-divider></mat-divider>
+      </div>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-dishes [dishes]="this.filtredDishes"></app-dishes>
+  </mat-drawer-content>
+</mat-drawer-container>
